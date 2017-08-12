@@ -4,3 +4,20 @@ alias gcm="git commit -m"
 alias gph="git push"
 alias gpl="git pull"
 alias starwars="telnet towel.blinkenlights.nl"
+
+# from dotfiles (for those who did not install dotfiles):
+alias sl="ls"
+alias ls="ls -G"
+alias irb="pry"
+alias be="bundle exec"
+
+# make `g` behave like `git status` with no args, or `git` with args
+g () {
+  if [ $# -eq 0 ]
+  then
+    git status
+  else
+    git "$@"
+  fi
+}
+__git_complete g _git
