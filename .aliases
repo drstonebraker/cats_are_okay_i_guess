@@ -1,9 +1,28 @@
+#!/bin/bash
+
 alias be="bundle exec"
 alias gaa="git add -A"
 alias gcm="git commit -m"
 alias gph="git push"
 alias gpl="git pull"
 alias starwars="telnet towel.blinkenlights.nl"
+
+alias rb='ruby'
+alias lsa='ls -a'
+alias ber="bundle exec rspec"
+alias berf="bundle execs rspec --fail-fast"
+alias bi='bundle install'
+alias gb='git branch'
+alias gco='git checkout'
+alias nb='git checkout -b'
+alias gcm='git commit -am'
+alias remotes='git remote --v'
+
+# command to make new directory and cd into it
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
 
 # from dotfiles (for those who did not install dotfiles):
 alias sl="ls"
